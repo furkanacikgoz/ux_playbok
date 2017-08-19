@@ -9,10 +9,10 @@ html, body {
 	font-family: 'Source Sans Pro', sans-serif;
 }
 
-h1 { font-size: 3em }
+h1 { font-size: 3em; min-height: 96px }
 h2 { font-size: 2em; margin: 10px 0}
 
-h3 {
+.methods-title {
 	padding: 10px;
     background: #414856;
     border-bottom: 1px solid #edeef1;
@@ -36,7 +36,7 @@ section, section ul {
 
 .list-items {
     
-    width: 250px;
+    width: 450px;
     background: #fff;
     box-shadow: 1px 0 3px rgba(0,0,0,0.40);
 }
@@ -59,3 +59,43 @@ section, section ul {
     font-size: 16px;
     font-weight: bold;
 }
+
+.list-items ul li:first-child {
+	color: #fff;
+}
+
+.title-text {
+	box-shadow: inset 0 -20px 0 0px #F5ED09
+}
+
+.tabs {
+	overflow:hidden;
+}
+.tabs li {
+	
+	float: left;
+	border: solid 1px #ccc000;
+	background: 
+}
+
+.tabs li:hover {
+	background: #fff000;
+}
+
+.tabs li a {
+	color: #fff;
+	padding: 20px;
+}
+
+.tabs li a:hover {
+	color: #000;
+}
+
+.selected-tab {
+	background: #fff000;
+}
+
+
+
+
+

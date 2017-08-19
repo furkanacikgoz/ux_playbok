@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
+	
 	<script type="text/javascript" src="jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="typed.min.js"></script>
 	<script src="script.js"></script>
 	<link rel="stylesheet" type="text/css" href="reset.css">
 	<link rel="stylesheet" type="text/css" href="style.css">
@@ -9,69 +11,142 @@
 </head>
 <body> 
 	<header>
-		<ul class="menu">
-			<li><a href="#">KEŞFET</a></li>
-			<li><a href="#">TARARLA</a></li>
-			<li><a href="#">ÜRET</a></li>
-			<li><a href="#">YAYINLA</a></li>
-		</ul>
+		<h1>UX PLAYBOOK<br>
+		<span class="title-text"></span>
+		</h1>
 	</header>
-
-	<h1>interaktif kullanıcı deneyimi tasarımı el kitabı</h1>
-	<i style="color:#ff0000"><strong>içerik test için hazırlanmıştır dikkate almayınız</strong></i>
+	
+	<!--	
+		<ul class="tabs">
+			<li><a href="#" qID="">tab 1</a></li>
+			<li><a href="#" qID="">tab 2</a></li>
+		</ul>
+	-->
 	<section id="section-1">
-		<h2>adım 1</h2>
-		<label>select product state
-			<select id="site-type">
+
+		<label><h2>Kullanıcılarınız hakkında neyi merak ediyorsunuz?</h2>
+			<select id="question-1">
 				<option>select</option>
-				<option qID="new">New</option>
-				<option qID="redesign">Redesign</option>
+				<option qID="how">Nasıl kullanıyorlar?</option>
+				<option qID="say">Ne söylüyorlar?</option>
 			</select>
 		</label>
+		
 
 		<div class="list-items">
-			<h3>Methods</h3>
-			<ul id="new">
-				<li>Stakeholders Interviews</li>
-				<li>Define Key Performance Indicators</li>
-				<li>Moodboards</li>
+			<ul id="how">
+				<li>Tıklama Analizi (Clickstream Analysis)</li>
+				<li>A/B Testi (A/B Testing)</li>
+				<li>Doğru - Amaç Çalışmaları (True-Intent Studies)</li>
+				<li>Kullanılabilirlik Benchmark’ı (Usability Benchmarking in lab)</li>
+				<li>İlk Tıklama Testi (First Click Testing)</li>
 			</ul>
-			<ul id="redesign">
-			    <li>Personas</li>
-			    <li>User Interview / Focus Group</li>
-			    <li>Brainstorming</li>
+			<ul id="say">
+				<li>Röportajlar (Interviews)</li>
+				<li>Konseptin Testi (Concept Testing)</li>
+				<li>Günlük/Kamera Çalışmaları (Diary/Camera Studies)</li>
+				<li>Müşteri Geribeslemesi (Customer Feedback)</li>
+				<li>Albeni Çalışmaları (Desirability Studies)</li>
+				<li>Kart Sıralama Tekniği (Desirability Studies)</li>
+				<li>Doğru - Amaç Çalışmaları (True-Intent Studies)</li>
+				<li>Anlık Anket (Intercept Surveys)</li>
+				<li>E-posta Anket (Email Surveys)</li>
+				<li>5 Saniye Testi (The 5 Second Testing)</li>
+				<li>Paralel Tasarım (Parallel Design)</li>
+				<li>Prototipleme (Prototyping)</li>
 			</ul>
 		</div>
 	</section>
 
 	<section id="section-2">
-	<h2>adım 2</h2>
-		<label>select device type
-			<select id="device-type">
+		<label><h2>Veri mi lazım? Sebep mi?</h2>
+			<select id="question-2">
 				<option>select</option>
-				<option qID="desktop">desktop</option>
-				<option qID="mobile">mobile</option>
-				<option qID="both">both</option>
+				<option qID="how-why">Nasıl ve Niçin?</option>
+				<option qID="how-many">Kaç ve Ne Kadar?</option>
 			</select>
 		</label>
 		<div class="list-items">
-			<h3>Methods</h3>
-			<ul id="desktop">
-			    <li>User Flow</li>
-			    <li>Task Analysis</li>
-			    <li>Taxonomies</li>
-			    <li>Content Audit</li>
+			<ul id="how-why">
+				<li>Kullanılabilirlik Testi (Usability-Lab Studies)</li>
+				<li>Etnografik Saha Çalışması (Ethnographic Field Studies)</li>
+				<li>Katılımcı Tasarım (Participatory Design)</li>
+				<li>Odak Grup Çalışması (Focus Groups)</li>
+				<li>Röportajlar (Interviews)</li>
+				<li>Göz İzleme (Eyetracking)</li>
+				<li>Konseptin Testi (Concept Testing)</li>
+				<li>Günlük/Kamera Çalışmaları (Diary/Camera Studies)</li>
+				<li>Albeni Çalışmaları (Desirability Studies)</li>
+				<li>Kart Sıralama Tekniği (Card Sorting)</li>
+				<li>Kullanılabilirlik Karşılaştırma Metodu (Usability Benchmarking)</li>
+				<li>5 Saniye Testi (The 5 Second Test)</li>
+				<li>Paralel Tasarım (Parallel Design)</li>
+				<li>Prototipleme (Prototyping)</li>			
 			</ul>
-			<ul id="mobile">
-			    <li>Usability Testing</li>
-			    <li>Card Sorting</li>
-			    <li>A/B Test</li>
-			    <li>Eyetracking</li>
+			<ul id="how-many">
+				<li>Günlük/Kamera Çalışmaları (Diary/Camera Studies)</li>
+				<li>Müşteri Geribeslemesi (Feedback)</li>
+				<li>Kart Sıralama Tekniği (Card Sorting)</li>
+				<li>Tıklama Analizi (Analysis) </li>
+				<li>A/B Testi  (A/B Testing)</li>
+				<li>Doğru - Amaç (True-Intent Studies)</li>
+				<li>Anlık Anket (Surveys)</li>
+				<li>E-posta Anketleri (Email Surveys)</li>
+				<li>Kullanılabilirlik Karşılaştırma Metodu (Usability Benchmarking)</li>
+				<li>İlk Tıklama Testi (First Click Testing)</li>
 			</ul>
-			<ul id="both">
-			    <li>Features Roadmap</li>
-			    <li>Use Cases and Scenarios</li>
-			    <li>Metrics Analysis</li>
+
+		</div>
+	</section>
+
+	<section id="section-3">
+		<label><h2>Ürün hangi aşamada?</h2>
+			<select id="question-3">
+				<option>select</option>
+				<option qID="idea">Fikir</option>
+				<option qID="designed">Henüz Tasarlandı</option>
+				<option qID="live">Canlıda</option>
+			</select>
+		</label>
+		<div class="list-items">
+			<ul id="idea">
+				<li>Konseptin Testi (Concept Testing)</li>
+				<li>Günlük/Kamera Çalışmaları (Diary/Camera Studies)</li>
+				<li>Müşteri Geribeslemesi (Customer Feedback)</li>
+				<li>İstenilebilirlik Çalışmaları (Desirability Studies)</li>
+				<li>Kart Sıralama Tekniği (Card Sorting)</li>
+				<li>Tıklama Analizi (Clickstream Analysis)</li>
+				<li>A/B Testi (A/B Testing)</li>
+				<li>Doğru - Amaç Çalışmaları (True-Intent Studies)</li>
+				<li>Anlık Anket (Intercept Surveys)</li>
+				<li>E-posta Anketleri (Email Surveys)</li>
+				<li>Kullanılabilirlik Karşılaştırma Metodu (Usability Benchmarking)</li>
+				<li>İlk Tıklama Testi (First Click Testing)</li>
+			</ul>
+			<ul id="designed">
+				<li>Etnografik Saha Çalışması (Ethnographic Field Studies)</li>
+				<li>Kullanılabilirlik Testi (Usability-Lab Studies)</li>
+				<li>Katılımcı Tasarım (Participatory Design)</li>
+				<li>Albeni Çalışmaları (Desirability Studies)</li>
+				<li>Konseptin Testi (Concept Testing)</li>
+				<li>Kart Sıralama Tekniği (Card Sorting)</li>
+				<li>Kağıt, Dijital Prototipleme (Ürünün Belirli bir parçası)</li>
+				<li>Göz İzleme (Eye Tracking)</li>
+			</ul>
+			<ul id="live">
+				<li>Kullanılabilirlik Testi (Usability-Lab Studies)</li>
+				<li>Kullanılabilirlik Karşılaştırma Metodu (Usability Benchmarking)</li>
+				<li>Röportajlar (Interviews)</li>
+				<li>A/B Testi (A/B Testing)</li>
+				<li>Konseptin Testi (Concept Testing)</li>
+				<li>Müşteri Geribeslemesi (Customer Feedback)</li>
+				<li>Tıklama Analizi (Clickstream Analysis)</li>
+				<li>Göz İzleme (Eyetracking)</li>
+				<li>Doğru - Amaç Çalışmaları (True-Intent Studies)</li>
+				<li>Anlık Anket (Intercept Surveys)</li>
+				<li>E-posta Anket (Email Surveys)</li>
+				<li>E-postİlk Tıklama Testi (First Click Testing)</li>
+				<li>5 Saniye Testi (The 5 Second Testing)</li>
 			</ul>
 		</div>
 	</section>
