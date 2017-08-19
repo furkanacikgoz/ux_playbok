@@ -1,0 +1,15 @@
+{
+  "question-1": {
+    "answer-1":[ "Tıklama Analizi (Clickstream Analysis)", "A/B Testi (A/B Testing)", "Doğru - Amaç Çalışmaları (True-Intent Studies)", "Kullanılabilirlik Benchmark’ı (Usability Benchmarking in lab)", "İlk Tıklama Testi (First Click Testing)" ],
+    "answer-2":[ "John", "Anna", "Peter" ]
+  },
+  "question-2": {
+    "answer-1":[ "John", "Anna", "Peter" ],
+    "answer-2":[ "John", "Anna", "Peter" ]
+  },
+  "question-3": {
+    "answer-1":[ "John", "Anna", "Peter" ],
+    "answer-2":[ "John", "Anna", "Peter" ],
+    "answer-3":[ "John", "Anna", "Peter" ]
+  }  
+}
